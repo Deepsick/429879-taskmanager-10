@@ -1,5 +1,6 @@
-const TASK_COUNT = 3;
+'use strict';
 
+const TASK_COUNT = 3;
 
 const getMenuTemplate = () => (
   `<section class="control__btn-wrap">
@@ -431,7 +432,7 @@ const getTaskTemplate = () => (
   </article>`
 );
 
-getBoardTemplate = () => (
+const getBoardTemplate = () => (
   `<section class="board container">
     <div class="board__filter-list">
       <a href="#" class="board__filter">SORT BY DEFAULT</a>
@@ -442,17 +443,17 @@ getBoardTemplate = () => (
   </section>`
 );
 
-const render = (container, template, position = 'beforeend') => container.insertAdjacentHTML(position, template);
+const render = (container, template, position = `beforeend`) => container.insertAdjacentHTML(position, template);
 
-const mainElement = document.querySelector('.main');
-const mainControlElement = mainElement.querySelector('.main__control');
+const mainElement = document.querySelector(`.main`);
+const mainControlElement = mainElement.querySelector(`.main__control`);
 
 render(mainControlElement, getMenuTemplate());
 render(mainElement, getFiltersTemplate());
 render(mainElement, getBoardTemplate());
 
-const boardElement = mainElement.querySelector('.board');
-const taskListElement = boardElement.querySelector('.board__tasks');
+const boardElement = mainElement.querySelector(`.board`);
+const taskListElement = boardElement.querySelector(`.board__tasks`);
 
 render(taskListElement, getTaskEditTemplate());
 render(boardElement, getLoadMoreButton());
