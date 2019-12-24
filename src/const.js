@@ -40,3 +40,15 @@ export const FilterType = {
   TAGS: `tags`,
   TODAY: `today`,
 };
+
+export const Method = {
+  GET: `GET`,
+  POST: `POST`,
+  PUT: `PUT`,
+  DELETE: `DELETE`
+};
+
+export const AUTHORIZATION = `Basic dXNlckweqweYXNzd29yZAo=`;
+export const END_POINT = `https://htmlacademy-es-10.appspot.com/task-manager`;
+
+
