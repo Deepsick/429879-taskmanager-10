@@ -51,4 +51,11 @@ export const Method = {
 export const AUTHORIZATION = `Basic dXNlckweqweYXNzd29yZAo=`;
 export const END_POINT = `https://htmlacademy-es-10.appspot.com/task-manager`;
 
+export const DefaultData = {
+  DELETE_BUTTON_TEXT: `Delete`,
+  SAVE_BUTTON_TEXT: `Save`,
+};
 
+export const SHAKE_ANIMATION_TIMEOUT = 600;
+
+export const MSECONDS_IN_SECOND = 1000;
